@@ -1,0 +1,66 @@
+/* Home.css */
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.video-wrapper {
+  position: relative;
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  transform: translateX(-50%);  
+  text-align: left;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.video-description {
+  margin: 0;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+.visit-store-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  text-decoration: none;
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bold;
+}
+
+.visit-store-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Ensure the video covers the full screen on mobile devices */
+.video-player {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
